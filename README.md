@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Roboter-Design-Challenge-RDC
-Autonomes Fahrzeug mit Arduino + Python: Linienverfolgung &amp; Hindernisvermeidung
-=======
-Autonomes Fahrzeug mit Arduino + Python: Linienverfolgung &amp; Hindernisvermeidung
-
 # Roboter-Design-Challenge-RDC 🤖🚗
 
 Ein autonomes Fahrzeug-Projekt.
