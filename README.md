@@ -1,9 +1,8 @@
-# Roboter-Design-Challenge-RDC
 Autonomes Fahrzeug mit Arduino + Python: Linienverfolgung &amp; Hindernisvermeidung
 
 # Roboter-Design-Challenge-RDC 🤖🚗
 
-Ein autonomes Fahrzeug-Projekt im Rahmen der [Roboter Design Challenge der Jade Hochschule](https://www.jade-hs.de/unsere-hochschule/fachbereiche/ingenieurwissenschaften/veranstaltungen/design-challenge/).
+Ein autonomes Fahrzeug-Projekt.
 
 Unser Roboter fährt selbstständig einen Parcours ab, folgt einer Linie, erkennt Hindernisse und meistert Aufgaben wie Rampen oder Tunnel – **ohne Fernbedienung**!
 
