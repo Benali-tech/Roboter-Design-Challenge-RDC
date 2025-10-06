@@ -1,0 +1,3 @@
+pyserial  #Zum Lesen/Schreiben über die serielle Schnittstelle (Arduino ↔ PC)
+matplotlib # Um Sensordaten grafisch darzustellen (z. B. Distanzverlauf)
+numpy    #Hilft bei Berechnungen (optional, aber oft nützlich)
