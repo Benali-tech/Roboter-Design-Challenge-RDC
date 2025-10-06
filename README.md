@@ -16,11 +16,6 @@ Der Roboter muss **vollständig autonom** einen vorgegebenen Parcours bewältige
 - Spezielle Aufgaben lösen (z. B. „Müll“ einsammeln, Signale erkennen)
 - Unter verschiedenen Bedingungen fahren (unterschiedliche Böden, Steigungen)
 
-> 🌍 Thema 2025: *Noch geheim!*  
-> *(Vorherige Themen: Säuberung des Wattenmeers, Rettung aus Feuer & Eis)*
-
----
-
 ## 🧱 Hardware-Bauteile (aus dem Bausatz)
 
 Wir nutzen nur Teile aus dem offiziellen Bausatz + max. **10€ Eigenkäufe**:
@@ -32,10 +27,6 @@ Wir nutzen nur Teile aus dem offiziellen Bausatz + max. **10€ Eigenkäufe**:
 - **2 DC-Motoren mit Rädern**
 - **Akku, Platine, Kabel, Schrauben**
 
-❗ Am Ende müssen zurückgegeben werden: **Controller, Akku, Motoren, Platine**.
-
----
-
 ## 🛠️ Aufbau des Roboters
 
 Der Roboter wurde komplett selbst gebaut – kein vorgefertigtes Chassis.  
@@ -44,10 +35,6 @@ Er hat:
 - Zwei Antriebsräder hinten, Vorderrad frei drehbar (Lenkung durch Geschwindigkeitsunterschied)
 - Sensoren vorne und unten angebracht
 
-📸 *(Du kannst hier später ein Bild einfügen, wenn du eines hast)*  
-![Roboter-Bild](docs/bilder/mein_roboter.jpg)
-
----
 
 ## 💻 Software & Programmierung
 
