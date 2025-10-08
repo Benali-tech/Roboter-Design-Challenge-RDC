@@ -76,24 +76,41 @@ python serial_reader.py
 
 Roboter-Design-Challenge-RDC/
 │
-├── arduino/
-│   └── rdc_main.ino                # Arduino-Hauptcode
+├── arduino/                 # Enthält den Arduino-Code (C++) für die Robotersteuerung
+│   └── rdc_main.ino         # Hauptprogramm: Linienverfolgung, Ultraschallsensor, Motorsteuerung
 │
-├── python/
-│   ├── __init__.py
-│   ├── config.py                   # Serielle Port-Konfiguration, Logging-Level etc.
-│   ├── serial_reader.py            # Kommunikation mit Arduino
-│   ├── visualization.py            # Live- oder gespeicherte Daten visualisieren
-│   ├── data_logger.py              # (optional) Speichert Messwerte in CSV
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── parser.py               # Hilfsfunktionen für Datenverarbeitung
-│   │   └── filters.py              # evtl. Glättung von Messwerten
-│   ├── tests/
-│   │   ├── test_serial_reader.py   # Unit Tests
-│   │   └── test_parser.py
-│   └── main.py                     # Einstiegspunkt, verbindet alles
+├── python/                  # Python-Kommunikation, Visualisierung & Analyse
+│   │
+│   ├── config.py            # Zentrale Konfiguration (Serieller Port, Baudrate, Log-Dateien)
+│   │
+│   ├── serial_reader.py     # Verbindet sich mit Arduino über USB/Serial und liest Datenströme
+│   │
+│   ├── data_logger.py       # Speichert eingehende Sensordaten (Distanz, Linienstatus, etc.) in CSV-Datei
+│   │
+│   ├── visualization.py     # Liest geloggte Daten und zeigt sie als Diagramm (Matplotlib)
+│   │
+│   ├── main.py              # Hauptskript – verbindet alle Module (SerialReader, Logger, etc.)
+│   │                        # Läuft kontinuierlich und liest Daten vom Roboter
+│   │
+│   ├── utils/               # Sammlung von Hilfsfunktionen & Datenverarbeitung
+│   │   ├── __init__.py      # Markiert diesen Ordner als Python-Paket (Pflicht für Importe)
+│   │   ├── parser.py        # Enthält Funktionen, um serielle Datenstrings zu zerlegen (z. B. "DIST:25;LINE:1")
+│   │   └── filters.py       # Optional: Filter & Glättungsfunktionen für Sensordaten (z. B. gleitender Mittelwert)
+│   │
+│   ├── tests/               # Automatische Tests für Qualitätssicherung
+│   │   ├── test_parser.py       # Testet Funktionen aus utils/parser.py
+│   │   └── test_serial_reader.py # Testet Verhalten des SerialReader-Moduls (z. B. simulierte Daten)
+│   │
+│   ├── __init__.py          # Macht den Ordner „python“ zu einem Python-Paket
 │
-├── requirements.txt
-└── README.md
+├── README.md                # Projektbeschreibung, Ziele, Aufbau & Bedienungsanleitung
+│
+├── requirements.txt         # Liste aller benötigten Python-Abhängigkeiten (pyserial, pandas, matplotlib)
+│
+├── LICENSE                  # Lizenzdatei (z. B. MIT, GPL) – regelt Nutzungsrechte
+│
+├── .gitignore               # Definiert Dateien, die Git ignorieren soll (z. B. .idea/, __pycache__)
+│
+└── .idea/                   # PyCharm-Projektdateien (automatisch generiert, nicht manuell bearbeiten)
+
 
