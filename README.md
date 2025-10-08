@@ -71,3 +71,29 @@ Im Terminal:
 cd python
 python serial_reader.py
 >>>>>>> a4ba82ad891cf18d6e2bc647e97413a85ef5929c
+
+### Projektstruktur (Python-Teil):
+
+Roboter-Design-Challenge-RDC/
+│
+├── arduino/
+│   └── rdc_main.ino                # Arduino-Hauptcode
+│
+├── python/
+│   ├── __init__.py
+│   ├── config.py                   # Serielle Port-Konfiguration, Logging-Level etc.
+│   ├── serial_reader.py            # Kommunikation mit Arduino
+│   ├── visualization.py            # Live- oder gespeicherte Daten visualisieren
+│   ├── data_logger.py              # (optional) Speichert Messwerte in CSV
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── parser.py               # Hilfsfunktionen für Datenverarbeitung
+│   │   └── filters.py              # evtl. Glättung von Messwerten
+│   ├── tests/
+│   │   ├── test_serial_reader.py   # Unit Tests
+│   │   └── test_parser.py
+│   └── main.py                     # Einstiegspunkt, verbindet alles
+│
+├── requirements.txt
+└── README.md
+
